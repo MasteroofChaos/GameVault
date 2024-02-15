@@ -1,0 +1,254 @@
+/* Verhalte container */
+.container {
+    display: block;
+    
+}
+
+section {
+    padding: 10px 0;
+}
+
+body section .container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+body section h2 {
+    text-align: center;
+}
+
+main h1{
+    text-align:center;
+    font-family: cursive;
+    margin: 50px;
+    font-size:40px;
+
+}
+table,th,td{
+    border: thin solid;
+    border-collapse: collapse; 
+    text-align: center; 
+}
+thead th {
+    background-color: black;
+    color:white;
+  }
+tbody td{
+    background-color: white;
+    color:black;
+}
+
+
+.suchfeld{
+
+    outline: purple solid 20px;
+    margin: 20px;
+    padding: 20px;
+    text-align:center;
+    background-color: black;
+    color:white;
+}
+/* Styles nur Menu */
+.menu button {
+    object-position: right;
+ 
+
+}
+
+.clearfix{
+    overflow: auto;
+}
+
+button {
+    background-color: grey;
+    color:black;
+
+}
+
+.product_container {
+    display: inline-block;
+    text-align: center;
+
+    /* Hier allgemeines image Verhalten definieren */
+    
+}
+
+
+.w_33 {
+    width: 33%;
+
+}
+.w_100{
+    width: 100%
+}
+
+.bggray{
+    background-color: gray;
+    color: black;
+}
+
+.bgpurple{
+    background-color: #CE0EC4;
+    color:black;
+}
+.bgred{
+    background-color:red;
+    color:black;
+
+}
+.bgblue{
+    background-color: blue;
+    color:white;
+    
+
+}
+.center {
+    text-align: center;
+    list-style-position: inside;
+  }
+img {
+    display: block;
+    margin: 0 auto;
+
+}
+.flex-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between ;
+    align-items: center ;
+    list-style: none;
+    background: purple;
+    }
+  
+  
+  .flex-container a {
+    text-decoration: underline overline ;
+    display: block ;
+    padding: 1em;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    
+  }
+  
+  
+  .bg-hover-blue a:hover {
+    background: #1565C0;
+  }
+  .bg-hoverr-blue a img:hover{
+    background: #123456
+  }
+  
+.navigation button {
+    min-width: 160px;
+    height: 3em;
+    cursor: pointer;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+
+  }
+}
+
+@media all and (max-width: 600px) {
+  .flex-container {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .flex-container a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  .flex-container li:last-of-type a {
+    border-bottom: none;
+  }
+}
+  .links{
+    justify-content: flex-start;
+  }
+h2{
+    text-align:center;
+}
+.bgblack{
+    background: black;
+}
+
+.noPoints{
+  list-style: none;
+  
+}
+.bg-hover-red ul li a:hover{
+  font-family:cursive;
+  background-color:rgb(255, 0, 0);
+}
+.platz ul li {
+  padding-bottom: 10px ;
+
+}
+
+.anchorMenu{
+  padding-left: 1rem;
+  
+
+}
+
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+main {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-areas:
+    "nav  main";
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 150px 1fr;
+  
+}
+
+main .content {
+  grid-area: main;
+}
+
+main aside {
+  grid-area: nav;
+  
+
+
+}
+
+main aside .sideNavigation {
+  position: sticky;
+  top: 0;
+  padding-top: 5px;
+  text-align:left;
+
+}
+.flex-kontakt{
+  display:flex;
+  flex-direction:column;
+  background:black;
+  outline: purple solid 20px;
+  margin: 20px;
+  color:white;
+
+}
+body{
+  margin-left: 0;
+  margin-right: 0;
+}
+.flex-container-beside{
+  display:flex;
+  flex-wrap: nowrap;
+  align-items:center;
+}
+table{
+  margin:auto
+}

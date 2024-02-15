@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVault</title>
+    <link rel="stylesheet" href="assets/my.css">
+    <style>
+        #zwei{float: right; margin-left: 30px;}
+        #eins{float: right; margin-right: 2px ; padding-right: 2px ;}
+        #drei{float: left;}
+        #vier{float: left;position: relative;left: 50%;transform: translateX(-50%);}
+        #hallo{scale: 2;}
+    </style>
+    <script src="assets/test2.js"></script>
+</head>
+<body>
+ 
+    <header>
+        <div class=" container menu">
+           
+                <div class="clearfix suchfeld navigation flex-container bgblack bg-hover-blue">
+                    <div class="links">
+                    <a href="#"><img src="assets/images/game_vault_logo_2.png" alt="GameVault Logo"/></a>
+                    </div>
+
+                    <!-- TODO: Das Gewählte Device als Anchor in die URL mitnehmen, dann wird dort hingescrollt -->
+                    <form id="hallo" method="GET">
+                        <label for="device" style="margin-left: 65px;">Pick a device:</label>
+                        <select name="device" id="device">
+                          <option value="switch">Nintendo Switch</option>
+                          <option value="acer">Acer Nitro 5</option>
+                          <option value="toasty">Toasty McToastface</option>
+                          <option value="playstation">PlayStation</option>
+                          <option value="razer_mouse">Razer Mouse</option>
+                          <option value="logitech_headset">Logitech Headset</option>
+                        </select>
+                        <input type="submit" value="Submit Form" style="margin-right: 40px;">
+                        
+                      </form>
+                      
+
+                    <div>
+                    <button id = "eins">Konto</button>
+                    <button id = "zwei">Warenkorb</button>
+                </div>
+                </div>
+            
+        </div>
+    </header>
+    <main>
+        <aside class="bgblack">
+            <div class="sideNavigation">
+                <div class="bg-hover-red platz">
+                    <ul class="noPoints anchorMenu">
+                        <li><a href="#category" class="clickable" style="color:white">Main Kategorien</a></li>
+                        <li><a href="#products" class="clickable" style="color:white">Top Produkte</a></li>
+                        <li><a href="#compare" class="clickable" style="color:white">Spielvergleiche</a></li>
+                        <li><a href="#list" class="clickable" style="color:white">Top Games 2023</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <div class="content">
+            <h1>Willkommen bei GameVault</h1>
+        
+            
+            <section id="category">
+            
+                
+                    <h2>Kategorien</h2>
+                    
+                    <ul class="flex-container bg-hover-blue">
+                        <li><a href="#hardware"><img src="assets/images/Hardware.jpg" style="width: auto; height: 200px" alt="Hardware"/><p>Hardware</p></a></li>
+                        <li><a href="#zubehoer"><img src="assets/images/Zubehoer.jpeg" style="width: auto; height: 200px" alt="Zubehör"/><p>Zubehör</p></a></li>
+                        <li><a href="#games"><img src="assets/images/Games.jpeg" style="width: auto; height: 200px" alt="Games"/><p>Games</p></a></li>
+                      </ul>
+            </section>
+            <section id="products" class="bggray">
+            <div class="container">
+                <h2> Unsere Top-Produkte:</h2>
+    
+                <div class="product_container w_33 bg-hoverr-blue" id="acer"> 
+                    <a href="#"><img  src="assets/images/Acer_Nitro_5.png" style="width: 200px; height: 150px" alt="Acer Nitro 5" /></a>
+                    <p>Acer Nitro 5</p>
+                    <p> 500€ </p>
+
+                    
+                </div>
+                <div class="product_container w_33 bg-hoverr-blue" id="switch">
+                    <a href="#"><img  src="assets/images/Nintendo_Switch.png" style="width: 250px; height: 150px" alt="Nintendo Switch" /></a>
+                    <p> Nintendo Switch </p>
+                    <p> 350€ </p>
+                </div>
+                <div class="product_container w_33 bg-hoverr-blue ">
+                    <a href="assets/GTA5.html" target="_blank"><img src="assets/images/GTA5.png" style="width : 200px; height:auto" alt="GTA 5"></a>
+                    <p>GTA 5</p>
+                    <p> 25€</p>
+                </div>            
+                <div class="product_container w_33 bg-hoverr-blue" id="playstation">
+                    <a href="#"><img src="assets/images/PS5.png" style="width:200px; height:auto; margin-top: 50px" alt="PS5"></a>
+                    <p>PlayStation 5</p>
+                    <p> 550€ </p>
+                </div>
+                <div class="product_container w_33 bg-hoverr-blue" id="razer_mouse">
+                    <a href="#"><img src="assets/images/Razer_Basilisk_V3_Mouse.png" style="width:200px; height:auto; margin-top: 50px" alt="Razer Mouse"></a>
+                    <p>Razer Basilisk V3 Mouse</p>
+                    <p> 75€ </p>
+                </div>
+                <div class="product_container w_33 bg-hoverr-blue" id="logitech_headset">
+                    <a href="#"><img src="assets/images/Logitech_G432_Headset.png" style="width:200px; height:auto; margin-top: 50px" alt="Logitech Headset"></a>
+                    <p>Logitech G432 Headset </p>
+                    <p>55€ </p>
+                </div>
+    
+                </div>
+    
+            </section>
+            <section id="compare" class = "bgpurple container w_100 text_center">
+                
+                    <h2>Vergleich von Videogames</h2>
+                    <table style="text-align:left" valign="middle">
+                        <thead>
+                        <tr>
+                            <th> Kategories</th>
+                            <th> Valorant</th>
+                            <th> GTA 5</th>
+                            <th> Overwatch 2</th>
+                            <th>Mario Kart 8 Deluxe</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Multiplayer?</td>
+                            <td>Ja</td>
+                            <td>Ja</td>
+                            <td>Ja</td>
+                            <td>Ja</td>
+                        </tr>
+                        <tr>
+                            <td>Preis?</td>
+                            <td>Kostenlos</td>
+                            <td>ab 17€</td>
+                            <td>Kostenlos</td>
+                            <td>ab 50€</td>
+                        </tr>
+                        <tr>
+                            <td>PC-Spiel?</td>
+                            <td>Ja</td>
+                            <td>Ja</td>
+                            <td>Ja</td>
+                            <td>Nein</td>
+                        </tr>
+                        </tbody>
+                </table>
+    
+                
+            </section>
+            <section id="list" class = "bgblue center">
+                <h2>Die 10 Top-Beliebstesten Games 2023:</h2>
+                
+                <h4>Hier finden sich die 10 beliebtesten Videogames 2023 (Von Platz 1 bis Platz 10)</h4>
+                <ol>
+                    <li><a href="#" style="color:white">Hogwarts Legacy (PS5) </a></li>
+                    <li><a href="#" style="color:white">The Legend of Zelda: Tears of the Kingdom (Switch)</a></li>
+                    <li><a href="#" style="color:white">Hogwarts Legacy (PS4)</a></li>
+                    <li><a href="#" style="color:white">God of War: Ragnarök (PS5)</a></li>
+                    <li><a href="#" style="color:white">Super Mario Bros. Wonder (Switch)</a></li>
+                    <li><a href="#" style="color:white">Mario Kart 8: Deluxe (Switch)</a></li>
+                    <li><a href="#" style="color:white">Diablo 4 (PS5)</a></li>
+                    <li><a href="#" style="color:white">Star Wars Jedi: Survivor (PS5)</a></li>
+                    <li><a href="#" style="color:white">Gran Turismo 7 (PS5)</a></li>
+                    <li><a href="#" style="color:white">Hogwarts Legacy (Switch)</a></li>
+                </ol>
+            </section>
+        </div>
+    </main>
+    <footer class="flex-kontakt"> 
+        <p>Website wird gehostet von: </p>
+        <p>Kontakt: <a href="mailto:email@email.com" style="color:red">email@email.com</a></p>
+    </footer>
+</body>
+</html>

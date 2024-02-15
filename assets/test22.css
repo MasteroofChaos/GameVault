@@ -1,0 +1,35 @@
+.flex-container-beside  {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.text{
+    font-size:50px;
+    font-family: Georgia, serif;
+    color: black;
+}
+h1{
+    text-align: center;
+    text-decoration: underline overline;
+    font-size: 50px;
+}
+.buttonne{
+    scale: 5;
+    margin-left: 20rem;
+
+
+}
+body {
+    background-color: #fff;
+    -webkit-animation: random 5s infinite;
+    animation: random 5s infinite;
+}
+@keyframes  random {
+   15%  { background-color: red; } 
+   30%  { background-color: yellow; } 
+   45%  { background-color: green; } 
+   60%  { background-color: blue; }
+   75%  { background-color: white; }  
+   100% { background-color: purple; }
+}
