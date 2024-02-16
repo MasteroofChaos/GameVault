@@ -23,10 +23,10 @@ if(window.location.search.length > 0) {
     });
 
 }
-if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-    // true for mobile device
-    // alert("mobile device");}
+/*if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    true for mobile device
+    alert("mobile device");}
 else{
     // alert("No mobile device");
-}    
+}*/    
 

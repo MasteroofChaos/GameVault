@@ -275,6 +275,7 @@ margin:auto
   }
 }
 
+/* Anpassungen Tablet */
 @media (max-width: 800px) {
   header form input,
   header form select {
