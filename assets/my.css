@@ -125,6 +125,7 @@ img {
   align-items: center ;
   list-style: none;
   background: purple;
+  margin-bottom: 0;
   }
 
 
@@ -244,6 +245,7 @@ position: sticky;
 top: 0;
 padding-top: 5px;
 text-align:left;
+margin-top: 20px;
 
 }
 .flex-kontakt{
@@ -308,4 +310,7 @@ margin:auto
   main section .product_container {
     width: 100%;
   }
+}
+#category {
+  padding-bottom: 0;
 }
